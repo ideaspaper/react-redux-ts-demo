@@ -3,7 +3,7 @@ import React from 'react';
 const ErrorPage: React.FC = () => {
   return (
     <>
-      <h1>Error Page</h1>
+      <h1>Error</h1>
       <p>🙊 🐒 Oops... nothing here 🙈 🙉</p>
     </>
   );

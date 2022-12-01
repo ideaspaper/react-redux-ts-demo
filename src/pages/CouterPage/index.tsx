@@ -16,7 +16,7 @@ const CounterPage: React.FC = () => {
   };
   return (
     <>
-      <h1>Counter Page</h1>
+      <h1>Counter</h1>
       <div>
         <CounterText>{value}</CounterText>
         <ButtonWrapper onClickHandler={() => onClickHandler('increment')}>

@@ -11,27 +11,38 @@ import CounterPage from './pages/CouterPage';
 import BooksPage from './pages/BooksPage';
 import { Provider } from 'react-redux';
 import store from './store';
+import AddBookPage from './pages/AddBookPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-  },
-  {
-    path: '/home',
-    element: <HomePage />,
-  },
-  {
-    path: '/counter',
-    element: <CounterPage />,
-  },
-  {
-    path: '/books',
-    element: <BooksPage />,
-  },
-  {
-    path: '/about',
-    element: <AboutPage />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: 'home',
+        element: <HomePage />,
+      },
+      {
+        path: 'counter',
+        element: <CounterPage />,
+      },
+      {
+        path: 'books',
+        element: <BooksPage />,
+      },
+      {
+        path: 'add-book',
+        element: <AddBookPage />,
+      },
+      {
+        path: 'about',
+        element: <AboutPage />,
+      },
+    ],
   },
   {
     path: '*',
