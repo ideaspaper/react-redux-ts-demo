@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/HomePage';
-import CounterPage from './pages/CouterPage';
+import CounterPage from './pages/CounterPage';
 import BooksPage from './pages/BooksPage';
 import { Provider } from 'react-redux';
 import store from './store';
