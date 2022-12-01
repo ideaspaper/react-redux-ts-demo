@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import ButtonWrapper from '../../components/Button';
+import Button from '../../components/Button';
 import CounterText from '../../components/CounterText';
 import { decrementCounter, incrementCounter } from '../../store/actionCreators';
 import { RootState } from '../../store/reducers';
@@ -19,12 +19,12 @@ const CounterPage: React.FC = () => {
       <h1>Counter</h1>
       <div>
         <CounterText>{value}</CounterText>
-        <ButtonWrapper onClickHandler={() => onClickHandler('increment')}>
+        <Button onClickHandler={() => onClickHandler('increment')}>
           Increment
-        </ButtonWrapper>
-        <ButtonWrapper onClickHandler={() => onClickHandler('decrement')}>
+        </Button>
+        <Button onClickHandler={() => onClickHandler('decrement')}>
           Decrement
-        </ButtonWrapper>
+        </Button>
       </div>
     </>
   );
